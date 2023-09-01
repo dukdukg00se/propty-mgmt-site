@@ -68,7 +68,7 @@ header {
   gap: 16px;
 }
 
-.linksWrapper a {
+a {
   text-decoration: none;
   color: #28495f;
 }
@@ -88,6 +88,7 @@ header {
 
 /*************************************/
 /* Main styles */
+/* Banner / Hero image */
 
 .banner {
   background: center / cover no-repeat
@@ -107,7 +108,7 @@ header {
   gap: 20px;
   border-radius: 5px;
   padding: 20px 15px;
-  background: linear-gradient(180deg, #ffffffc7, #fffffff2);
+  background: linear-gradient(180deg, #ffffffd9, #fffffff2);
   text-align: center;
 }
 
@@ -118,6 +119,44 @@ header {
 
 .bannerContentContainer p {
   font-size: 20px;
+}
+
+/* Info Links */
+
+.infoLinks {
+  background-color: rgb(195 195 195 / 50%);
+}
+
+.infoLinks ul {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  height: 11vw;
+}
+
+.infoLinks li {
+  width: 30%;
+  border-right: solid 2px white;
+}
+
+.infoLinks li:first-of-type {
+  border-left: solid 2px white;
+}
+
+.infoLinks a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoLinks a:hover {
+  background-color: rgb(195 195 195 / 65%);
+}
+
+.infoLinks a:active {
+  background-color: rgb(195 195 195 / 95%);
 }
 
 /* linear-gradient(180deg, #ffffffe8 0%, #ff000000), center / cover no-repeat
