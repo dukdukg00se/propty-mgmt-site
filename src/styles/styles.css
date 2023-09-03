@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #28495f;
 }
 
@@ -48,7 +48,7 @@ header {
 
 .logoWrapper h2 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .logoWrapper span {
@@ -79,11 +79,12 @@ a {
 
 .linksWrapper > div {
   line-height: 40px;
-  background-color: #28495f;
+  background-color: #eb8137;
   color: white;
-  width: 125px;
+  width: 140px;
   text-align: center;
   border-radius: 5px;
+  letter-spacing: 0.7px;
 }
 
 /*************************************/
@@ -110,11 +111,14 @@ a {
   padding: 20px 15px;
   background: linear-gradient(180deg, #ffffffd9, #fffffff2);
   text-align: center;
+
+  height: 20%;
 }
 
 .bannerContentContainer h2 {
-  font-size: 32px;
-  letter-spacing: 0.3px;
+  font-size: 36px;
+  /* letter-spacing: 0.3px; */
+  font-weight: 600;
 }
 
 .bannerContentContainer p {
@@ -131,7 +135,7 @@ a {
   display: flex;
   justify-content: center;
   font-size: 22px;
-  height: 11vw;
+  height: 11vh;
 }
 
 .infoLinks li {
@@ -157,6 +161,88 @@ a {
 
 .infoLinks a:active {
   background-color: rgb(195 195 195 / 95%);
+}
+
+/* About section */
+
+.about {
+  padding: 45px 35px;
+  /* background-color: #28495f;
+  color: white; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about > div:first-child {
+  position: relative;
+  z-index: 1;
+  width: 40%;
+}
+
+.about > div:first-child::after {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  background: #eb8137;
+  content: '';
+  z-index: -1;
+}
+
+.about img {
+  height: auto;
+  width: 100%;
+}
+
+.aboutTextWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 55%;
+}
+
+.aboutTextWrapper h2 {
+  font-size: 36px;
+}
+
+.aboutTextWrapper p {
+  line-height: 1.2;
+}
+
+/* services section */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+  font-size: 22px;
+
+  background-color: #e1e1e1;
+}
+
+.services h2 {
+  font-size: 36px;
+}
+
+.services ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px 20px;
+}
+
+.services li > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.services li > div > img {
+  height: 45px;
 }
 
 /* linear-gradient(180deg, #ffffffe8 0%, #ff000000), center / cover no-repeat
