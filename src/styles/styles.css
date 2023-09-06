@@ -19,7 +19,7 @@ body {
 }
 
 /*************************************/
-/* Header styles */
+/* header styles */
 
 header {
   display: flex;
@@ -53,6 +53,7 @@ header {
 
 .logoWrapper span {
   display: block;
+  font-weight: 500;
   /* width: 60px; */
 }
 
@@ -89,7 +90,7 @@ a {
 
 /*************************************/
 /* Main styles */
-/* Banner / Hero image */
+/* banner / hero image */
 
 .banner {
   background: center / cover no-repeat
@@ -125,7 +126,7 @@ a {
   font-size: 20px;
 }
 
-/* Info Links */
+/* info Links */
 
 .infoLinks {
   background-color: rgb(195 195 195 / 50%);
@@ -163,7 +164,7 @@ a {
   background-color: rgb(195 195 195 / 95%);
 }
 
-/* About section */
+/* about section */
 
 .about {
   padding: 45px 35px;
@@ -245,5 +246,78 @@ a {
   height: 45px;
 }
 
-/* linear-gradient(180deg, #ffffffe8 0%, #ff000000), center / cover no-repeat
-    url(/src/img/kitchen-dining-view-compressed.jpg) */
+/* footer section */
+
+footer {
+  background-color: #28495f;
+  color: white;
+  padding: 20px 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+footer > div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.footerCompany {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footerCompany p {
+  text-align: center;
+}
+
+.footerLogoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.footerLogoContainer > a {
+  background-color: white;
+  width: fit-content;
+  border-radius: 50%;
+}
+
+.footerLogoContainer h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.footerLogoContainer span {
+  display: block;
+  font-weight: 500;
+}
+
+.footerLogoContainer img {
+  height: 90px;
+}
+
+footer a {
+  color: white;
+  display: block;
+  margin: 5px 0;
+}
+
+.footerContact h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footerCredit {
+  align-self: center;
+  text-align: center;
+}
+
+.footerCredit p {
+  margin: 5px 0;
+}
