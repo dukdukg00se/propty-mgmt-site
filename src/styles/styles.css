@@ -338,9 +338,6 @@ footer a {
   font-weight: 600;
 }
 
-.footerSocials {
-}
-
 .footerSocials h3 {
   font-size: 20px;
   font-weight: 600;
@@ -378,29 +375,29 @@ footer a {
   gap: 5px;
 }
 
-.footerLogoContainer {
+.footerLogoWrapper {
   display: flex;
   align-items: center;
   /* justify-content: center; */
   gap: 5px;
 }
 
-.footerLogoContainer > a {
+.footerLogoWrapper > a {
   background-color: white;
   width: fit-content;
   border-radius: 50%;
 }
 
-.footerLogoContainer h3 {
+.footerLogoWrapper img {
+  height: 80px;
+}
+
+.footerLogoWrapper h2 {
   font-weight: 600;
   font-size: 18px;
 }
 
-.footerLogoContainer span {
+.footerLogoWrapper span {
   display: block;
   font-weight: 500;
-}
-
-.footerLogoContainer img {
-  height: 80px;
 }
