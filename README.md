@@ -1,3 +1,23 @@
-Photo by <a href="https://unsplash.com/@infiniteviews?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Infinite Views</a> on <a href="https://unsplash.com/photos/XkpuSnWMQu4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+# Property Management Business Website
 
-<a href="https://www.freepik.com/free-photo/young-couple-buying-new-house-asian-woman-african-man-signing-documents-new-home_14816261.htm#from_view=detail_alsolike">Image by prostooleh</a> on Freepik
+## Overview
+
+A custom coded static business website. Current site contains only a landing page with general info or filler content and design outline. Content needs to be added and updated before website goes live.
+
+[Live Demo](https://dukdukg00se.github.io/todo-list/)
+
+<img src="./src/img/home-screenshot.png" width="65%">
+
+## Future Work - Immediate Attention
+
+- Add mobile, tablet, and large screen versions (add media breakpoints).
+- Edit and consolidate styles.
+- Add name for business.
+- Update content.
+- Add secondary pages and fix page links.
+
+## Future Work - Nice To Haves
+
+- Create tenant / owner portals.
+- Add image carousel for hero banner shwowing different images.
+- Add light / dark mode.
