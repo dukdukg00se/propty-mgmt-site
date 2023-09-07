@@ -23,7 +23,6 @@ a {
   color: #28495f;
 }
 
-/*************************************/
 /* header styles */
 
 header {
@@ -246,6 +245,7 @@ header {
 }
 
 /* services section */
+
 .services {
   display: flex;
   flex-direction: column;
