@@ -117,7 +117,7 @@ a {
 }
 
 .bannerContentContainer h2 {
-  font-size: 32px;
+  font-size: 36px;
   /* letter-spacing: 0.3px; */
   font-weight: 600;
 }
@@ -135,7 +135,7 @@ a {
 .infoLinks ul {
   display: flex;
   justify-content: center;
-  font-size: 22px;
+  font-size: 20px;
   height: 11vh;
 }
 
@@ -188,6 +188,7 @@ a {
   width: 100%;
   height: 100%;
   background: #eb8137;
+  /* background: rgb(42 75 95); */
   content: '';
   z-index: -1;
 }
@@ -212,6 +213,45 @@ a {
   line-height: 1.2;
 }
 
+/* emergency section */
+
+.emergency {
+  padding: 35px;
+  margin-bottom: 25px;
+}
+
+.emergency > div {
+  background-color: #e1e1e1;
+  padding: 30px;
+  color: #294a5f;
+  border-radius: 20px;
+  background-image: url('../img/emergency-icons/emergency-call.png');
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+  background-position: right 3% bottom 50%;
+  margin: 0 auto;
+  width: 80%;
+
+  /* background: linear-gradient(84deg, #051d29, 40%, #f11),
+    center / contain no-repeat
+      url('../img/emergency-icons/emergency-call-1.png'); */
+}
+
+.emergency > div > div {
+  width: 80%;
+}
+
+.emergency h3 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.emergency p {
+  font-size: 26px;
+  margin-top: 15px;
+  line-height: 30px;
+}
+
 /* services section */
 .services {
   display: flex;
@@ -219,7 +259,7 @@ a {
   align-items: center;
   padding: 40px 30px;
   gap: 30px;
-  font-size: 22px;
+  font-size: 20px;
 
   background-color: #e1e1e1;
 }
@@ -246,16 +286,45 @@ a {
   height: 45px;
 }
 
+/* areas section */
+
+.areas {
+  margin: 45px 0;
+}
+
+.areas > div {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.areas h2 {
+  font-size: 22px;
+}
+
+.areas table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.areas td {
+  text-align: center;
+  padding: 5px;
+}
 /* footer section */
 
 footer {
   background-color: #28495f;
   color: white;
-  padding: 20px 30px;
+  padding: 25px 30px 20px;
 
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
 }
 
 footer > div:first-of-type {
