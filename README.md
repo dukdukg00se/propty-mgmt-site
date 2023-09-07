@@ -19,5 +19,5 @@ A custom coded static business website. Current site contains only a landing pag
 ## Future Work - Nice To Haves
 
 - Create tenant / owner portals.
-- Add image carousel for hero banner shwowing different images.
+- Add image carousel for hero banner showing different images.
 - Add light / dark mode.
