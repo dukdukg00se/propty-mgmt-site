@@ -1,8 +1,14 @@
-const links = document.querySelectorAll('a');
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.desktopLinksWrapper');
 
-links.forEach((link) => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log('clicked!');
-  });
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
 });
+
+document.querySelectorAll('.nav-link').forEach((n) =>
+  n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+  })
+);

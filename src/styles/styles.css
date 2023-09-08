@@ -82,6 +82,74 @@ header {
   letter-spacing: 0.7px;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.bar {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 5px auto;
+  /* -webkit-transition: all 0.3s ease; */
+  transition: all 0.3s ease;
+  background-color: #294a5f;
+  border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  .desktopLinksWrapper {
+    position: absolute;
+    left: -100%;
+    top: 119px;
+    flex-direction: column;
+    background-color: #28495f;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+
+    visibility: hidden;
+  }
+
+  .desktopLinksWrapper li {
+    margin: 16px 0;
+  }
+
+  .active {
+    left: 0px;
+
+    visibility: visible;
+  }
+
+  .desktopLinksWrapper ul {
+    display: block;
+  }
+
+  .desktopLinksWrapper a {
+    color: white;
+  }
+
+  .desktopLinksWrapper h3 {
+    display: none;
+  }
+}
+
 /* Main styles */
 /* banner / hero image */
 
@@ -89,7 +157,7 @@ header {
   background: center / cover no-repeat
     url(../img/kitchen-dining-view-compressed.jpg);
   height: 70vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,10 +291,6 @@ header {
   background-position: right 3% bottom 50%;
   margin: 0 auto;
   width: 80%;
-
-  /* background: linear-gradient(84deg, #051d29, 40%, #f11),
-    center / contain no-repeat
-      url('../img/emergency-icons/emergency-call-1.png'); */
 }
 
 .emergency > div > div {
