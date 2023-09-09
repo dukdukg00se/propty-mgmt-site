@@ -22,10 +22,15 @@ html {
   --bigger-font-size-large: 2.6rem;
   --biggest-font-size-large: 3.6rem;
 
-  --base-font-size-mobile: 1.4rem;
-  --big-font-size-mobile: 1.6rem;
-  --bigger-font-size-mobile: 2rem;
-  --biggest-font-size-mobile: 2.4rem;
+  --base-font-size-medium: 1.6rem;
+  --big-font-size-medium: 1.8rem;
+  --bigger-font-size-medium: 2.3rem;
+  --biggest-font-size-medium: 3rem;
+
+  --base-font-size-small: 1.4rem;
+  --big-font-size-small: 1.6rem;
+  --bigger-font-size-small: 2rem;
+  --biggest-font-size-small: 2.4rem;
 }
 
 body {
@@ -34,7 +39,7 @@ body {
   color: var(--primary-blue);
 }
 
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   body {
     font-size: var(--base-font-size-mobile);
   }
@@ -185,7 +190,7 @@ header {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .logoWrapper img {
     height: 8rem;
   }
@@ -260,7 +265,7 @@ header {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .bannerContentContainer h1 {
     font-size: var(--biggest-font-size-mobile);
   }
@@ -311,7 +316,7 @@ header {
   background-color: var(--accent-active);
 }
 
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .infoLinks ul {
     font-size: var(--big-font-size-mobile);
     height: 8vh;
@@ -379,7 +384,7 @@ header {
 @media (max-width: 720px) {
 }
 
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .about > div {
     flex-direction: column;
     padding: 2.5rem 1rem;
@@ -443,13 +448,18 @@ header {
   line-height: 30px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .emergency {
     padding: 0 2.5rem 2.5rem;
   }
 
   .emergency > div {
     background-image: none;
+  }
+
+  .emergency > div > div {
+    width: 100%;
+    text-align: center;
   }
 
   .emergency h3 {
@@ -499,7 +509,7 @@ header {
   height: 45px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .services {
     font-size: var(--big-font-size-mobile);
     padding: 2.5rem 2rem;
@@ -546,7 +556,7 @@ header {
   padding: 5px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .areas {
     margin: 2.5rem 0.5rem;
   }
@@ -654,7 +664,7 @@ footer a {
   font-weight: 500;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   footer {
     padding: 1.5rem;
     gap: 1.5rem;
