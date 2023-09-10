@@ -22,15 +22,20 @@ html {
   --bigger-font-size-large: 2.6rem;
   --biggest-font-size-large: 3.6rem;
 
-  --base-font-size-medium: 1.6rem;
-  --big-font-size-medium: 1.8rem;
-  --bigger-font-size-medium: 2.3rem;
-  --biggest-font-size-medium: 3rem;
+  --base-font-size-medium: 1.7rem;
+  --big-font-size-medium: 1.9rem;
+  --bigger-font-size-medium: 2.4rem;
+  --biggest-font-size-medium: 3.2rem;
 
-  --base-font-size-small: 1.4rem;
-  --big-font-size-small: 1.6rem;
-  --bigger-font-size-small: 2rem;
-  --biggest-font-size-small: 2.4rem;
+  --base-font-size-small: 1.6rem;
+  --big-font-size-small: 1.8rem;
+  --bigger-font-size-small: 2.3rem;
+  --biggest-font-size-small: 3rem;
+
+  --base-font-size-xsmall: 1.4rem;
+  --big-font-size-xsmall: 1.6rem;
+  --bigger-font-size-xsmall: 2rem;
+  --biggest-font-size-xsmall: 2.4rem;
 }
 
 body {
@@ -437,12 +442,16 @@ footer a {
 }
 
 @media (max-width: 1024px) {
+  body {
+    font-size: var(--base-font-size-medium);
+  }
+
   .logoWrapper img {
     height: 10rem;
   }
 
   .logoWrapper h2 {
-    font-size: 19px;
+    font-size: var(--big-font-size-medium);
   }
 
   .hamburger {
@@ -492,11 +501,68 @@ footer a {
   .linksWrapper h3 {
     display: none;
   }
+
+  .bannerContentContainer h1 {
+    font-size: var(--biggest-font-size-medium);
+  }
+
+  .bannerContentContainer p {
+    font-size: var(--big-font-size-medium);
+  }
+
+  .infoLinks ul {
+    font-size: var(--big-font-size-medium);
+  }
+
+  .about > div {
+    gap: 4rem;
+    padding: 4rem 0;
+  }
+
+  .aboutTextWrapper {
+    width: 60%;
+  }
+
+  .aboutTextWrapperh2 {
+    font-size: var(--biggest-font-size-medium);
+  }
+
+  .emergency {
+    padding: 1.5rem 3.5rem 5rem;
+  }
+
+  .emergency > div {
+    background-size: auto 70%;
+  }
+
+  .emergency > div > div {
+    width: 75%;
+  }
+
+  .emergency h3 {
+    font-size: var(--biggest-font-size-medium);
+  }
+
+  .emergency p {
+    font-size: var(--bigger-font-size-medium);
+  }
+
+  .services {
+    font-size: var(--big-font-size-medium);
+  }
+
+  .services h2 {
+    font-size: var(--biggest-font-size-medium);
+  }
+
+  .areas > div {
+    width: 75%;
+  }
 }
 
 @media (max-width: 800px) {
   body {
-    font-size: var(--base-font-size-medium);
+    font-size: var(--base-font-size-small);
   }
 
   /* header styles */
@@ -506,7 +572,7 @@ footer a {
   }
 
   .logoWrapper h2 {
-    font-size: var(--big-font-size-medium);
+    font-size: var(--big-font-size-small);
   }
 
   .linksWrapper {
@@ -520,17 +586,17 @@ footer a {
   }
 
   .bannerContentContainer h1 {
-    font-size: var(--biggest-font-size-medium);
+    font-size: var(--biggest-font-size-small);
   }
 
   .bannerContentContainer p {
-    font-size: var(--big-font-size-medium);
+    font-size: var(--big-font-size-small);
   }
 
   /* info Links */
 
   .infoLinks ul {
-    font-size: var(--big-font-size-medium);
+    font-size: var(--big-font-size-small);
     height: 9vh;
   }
 
@@ -560,7 +626,7 @@ footer a {
   }
 
   .aboutTextWrapper h2 {
-    font-size: var(--biggest-font-size-medium);
+    font-size: var(--biggest-font-size-small);
   }
 
   /* emergency section */
@@ -579,11 +645,11 @@ footer a {
   }
 
   .emergency h3 {
-    font-size: var(--biggest-font-size-medium);
+    font-size: var(--biggest-font-size-small);
   }
 
   .emergency p {
-    font-size: var(--bigger-font-size-medium);
+    font-size: var(--bigger-font-size-small);
     line-height: 2.7rem;
     margin-top: 1.2rem;
   }
@@ -591,7 +657,7 @@ footer a {
   /* services section */
 
   .services {
-    font-size: var(--big-font-size-medium);
+    font-size: var(--big-font-size-small);
     padding: 2.5rem 2rem;
   }
 
@@ -602,7 +668,7 @@ footer a {
   }
 
   .services h2 {
-    font-size: var(--bigger-font-size-medium);
+    font-size: var(--bigger-font-size-small);
   }
 
   /* areas section */
@@ -617,7 +683,7 @@ footer a {
   }
 
   .areas h2 {
-    font-size: var(--big-font-size-medium);
+    font-size: var(--big-font-size-small);
   }
 
   /* footer section */
@@ -632,7 +698,7 @@ footer a {
   }
 
   footer > div:first-of-type h3 {
-    font-size: var(--big-font-size-medium);
+    font-size: var(--big-font-size-small);
   }
 
   .footerSocials img {
@@ -645,7 +711,7 @@ footer a {
   }
 
   .footerLogoWrapper h2 {
-    font-size: var(--base-font-size-medium);
+    font-size: var(--base-font-size-small);
     text-align: left;
   }
 
@@ -656,7 +722,7 @@ footer a {
 
 @media (max-width: 500px) {
   body {
-    font-size: var(--base-font-size-small);
+    font-size: var(--base-font-size-xsmall);
   }
 
   /* header styles */
@@ -666,7 +732,7 @@ footer a {
   }
 
   .logoWrapper h2 {
-    font-size: var(--big-font-size-small);
+    font-size: var(--big-font-size-xsmall);
   }
 
   .linksWrapper {
@@ -677,17 +743,17 @@ footer a {
   /* banner / hero image */
 
   .bannerContentContainer h1 {
-    font-size: var(--biggest-font-size-small);
+    font-size: var(--biggest-font-size-xsmall);
   }
 
   .bannerContentContainer p {
-    font-size: var(--big-font-size-small);
+    font-size: var(--big-font-size-xsmall);
   }
 
   /* info Links */
 
   .infoLinks ul {
-    font-size: var(--big-font-size-small);
+    font-size: var(--big-font-size-xsmall);
     height: 8vh;
   }
 
@@ -699,7 +765,7 @@ footer a {
   }
 
   .aboutTextWrapper h2 {
-    font-size: var(--biggest-font-size-small);
+    font-size: var(--biggest-font-size-xsmall);
   }
 
   /* emergency section */
@@ -709,11 +775,11 @@ footer a {
   }
 
   .emergency h3 {
-    font-size: var(--biggest-font-size-small);
+    font-size: var(--biggest-font-size-xsmall);
   }
 
   .emergency p {
-    font-size: var(--bigger-font-size-small);
+    font-size: var(--bigger-font-size-xsmall);
     line-height: 2.2rem;
     margin-top: 1rem;
   }
@@ -721,7 +787,7 @@ footer a {
   /* services section */
 
   .services {
-    font-size: var(--big-font-size-small);
+    font-size: var(--big-font-size-xsmall);
   }
 
   .services ul {
@@ -729,7 +795,7 @@ footer a {
   }
 
   .services h2 {
-    font-size: var(--bigger-font-size-small);
+    font-size: var(--bigger-font-size-xsmall);
   }
 
   /* areas section */
@@ -739,7 +805,7 @@ footer a {
   }
 
   .areas h2 {
-    font-size: var(--big-font-size-small);
+    font-size: var(--big-font-size-xsmall);
   }
 
   /* footer section */
@@ -750,7 +816,7 @@ footer a {
   }
 
   footer > div:first-of-type h3 {
-    font-size: var(--big-font-size-small);
+    font-size: var(--big-font-size-xsmall);
   }
 
   .footerSocials {
@@ -771,6 +837,6 @@ footer a {
   }
 
   .footerLogoWrapper h2 {
-    font-size: var(--base-font-size-small);
+    font-size: var(--base-font-size-xsmall);
   }
 }
