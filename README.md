@@ -10,7 +10,6 @@ A custom coded static business website. Current site contains only a landing pag
 
 ## Future Work - Immediate Attention
 
-- Add mobile, tablet, and large screen versions (add media breakpoints).
 - Edit and consolidate styles.
 - Add name for business.
 - Update content.
@@ -20,4 +19,5 @@ A custom coded static business website. Current site contains only a landing pag
 
 - Create tenant / owner portals.
 - Add image carousel for hero banner showing different images.
+- Refine page styles.
 - Add light / dark mode.
