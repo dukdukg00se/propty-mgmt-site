@@ -4,7 +4,7 @@
 
 A custom coded static business website. Current site contains only a landing page with general info or filler content and design outline. Content needs to be added and updated before website goes live.
 
-[Live Demo](https://meek-biscochitos-0bbd83.netlify.app)
+[Live Demo](https://tbd-propty-stwards.netlify.app)
 
 <img src="./src/img/home-screenshot.png" width="65%">
 
